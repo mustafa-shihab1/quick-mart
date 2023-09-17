@@ -11,26 +11,30 @@ class SplashController extends GetxController {
   void onInit() {
     super.onInit();
     // _appSettingsPrefs.clear();
+
     Future.delayed(
       const Duration(
         seconds: Constants.splashTimeSecond,
       ),
       () {
-        if(_appSettingsPrefs.getUserLoggedIn()){
-          Get.offAllNamed(
-            Routes.main,
-          );
-        }else{
-          if(_appSettingsPrefs.getOutBoardingScreenViewed()){
-            Get.offAllNamed(
-              Routes.login,
-            );
-          }else{
-            Get.offAllNamed(
-              Routes.outBoarding,
-            );
-          }
-        }
+        Get.offAllNamed(
+          Routes.outBoarding,
+        );
+        // if(_appSettingsPrefs.getUserLoggedIn()){
+        //   Get.offAllNamed(
+        //     Routes.main,
+        //   );
+        // }else{
+        //   if(_appSettingsPrefs.getOutBoardingScreenViewed()){
+        //     Get.offAllNamed(
+        //       Routes.login,
+        //     );
+        //   }else{
+        //     Get.offAllNamed(
+        //       Routes.outBoarding,
+        //     );
+        //   }
+        // }
 
       },
     );

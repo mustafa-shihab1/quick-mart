@@ -13,7 +13,7 @@ class Constants {
   static const String priceByDay= 'price_by_day';
   static const String priceByWeek= 'price_by_week';
   static const String priceByHour= 'price_by_hour';
-  static const int splashTimeSecond = 1;
+  static const int splashTimeSecond = 3;
   static const int sliderTimeMillSecond = 1;
   static const int codeVerificationMaxLine = 1;
   static const double elevation = 0;
