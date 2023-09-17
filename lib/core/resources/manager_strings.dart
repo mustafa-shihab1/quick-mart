@@ -29,6 +29,8 @@ class ManagerStrings {
 
   static String get flutterTriad => tr('flutterTriad');
 
+  static String get logoText => tr('Asia’s No 1 Ecommerce App');
+
   static String get logoutFailed => tr('logoutFailed');
 
   static String get selected => tr('Selected');
