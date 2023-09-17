@@ -51,19 +51,21 @@ class ManagerStrings {
 
   static String get outBoardingView => tr('outBoardingView');
 
-  static String get outBoardingTitle1 => tr('outBoardingTitle1');
+  static String get outBoardingTitle1 => tr('Explore a wide range of\nproducts');
 
-  static String get outBoardingTitle2 => tr('outBoardingTitle2');
+  static String get outBoardingTitle2 => tr('Unlock exclusive offers\nand discounts');
 
-  static String get outBoardingTitle3 => tr('outBoardingTitle3');
+  static String get outBoardingTitle3 => tr('Safe and secure\npayments');
 
-  static String get outBoardingSubTitle1 => tr('outBoardingSubTitle1');
+  static String get outBoardingSubTitle1 => tr('Explore a wide range of products at your fingertips. QuickMart offers an extensive collection to suit your needs.');
 
-  static String get outBoardingSubTitle2 => tr('outBoardingSubTitle2');
+  static String get outBoardingSubTitle2 => tr('Get access to limited-time deals and special promotions available only to our valued customers.');
 
-  static String get outBoardingSubTitle3 => tr('outBoardingSubTitle3');
+  static String get outBoardingSubTitle3 => tr(' QuickMart employs industry-leading encryption and trusted payment gateways to safeguard your financial information.');
 
-  static String get login => tr('login');
+  static String get next => tr('Next');
+
+  static String get login => tr('Login');
 
   static String get signUp => tr('signUp');
 
@@ -167,7 +169,7 @@ class ManagerStrings {
 
   static String get confirmPass => tr('confirmPass');
 
-  static String get skip => tr('skip');
+  static String get skip => tr('Skip for Now');
 
   static String get saved => tr('saved');
 
@@ -181,7 +183,7 @@ class ManagerStrings {
 
   static String get courseDescription => tr('courseDescription');
 
-  static String get empty => tr('empty');
+  static String get empty => tr('');
 
   static String get categories => tr('categories');
 
@@ -339,7 +341,7 @@ class ManagerStrings {
 
   static String get resend => tr('resend');
 
-  static String get getStartButton => tr('getStartButton');
+  static String get getStartButton => tr('Get Started');
 
   static String get sessionFinished => tr('sessionFinished');
 
@@ -357,7 +359,7 @@ class ManagerStrings {
 
   static String get name => tr('name');
 
-  static String get next => tr('next');
+  //static String get next => tr('next');
 
   static String get choosePayment => tr('choosePayment');
 

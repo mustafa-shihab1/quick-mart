@@ -6,22 +6,22 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../../core/resources/manager_assets.dart';
 import '../../../../core/resources/manager_strings.dart';
-import '../view/widget/out_boarding_item.dart';
+import '../view/widget/out_boarding_page.dart';
 
 class OutBoardingController extends GetxController {
   AppSettingsPrefs _appSettingsPrefs = instance<AppSettingsPrefs>();
   List outBoardingItems = [
-    OutBoardingItem(
+    OutBoardingPage(
       title: ManagerStrings.outBoardingTitle1,
       subTitle: ManagerStrings.outBoardingSubTitle1,
       image: ManagerAssets.outBoardingImage1,
     ),
-    OutBoardingItem(
+    OutBoardingPage(
       title: ManagerStrings.outBoardingTitle2,
       subTitle: ManagerStrings.outBoardingSubTitle2,
       image: ManagerAssets.outBoardingImage2,
     ),
-    OutBoardingItem(
+    OutBoardingPage(
       title: ManagerStrings.outBoardingTitle3,
       subTitle: ManagerStrings.outBoardingSubTitle3,
       image: ManagerAssets.outBoardingImage3,

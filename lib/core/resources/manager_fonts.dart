@@ -2,7 +2,7 @@ import 'package:flutter_triad/core/util/size_util.dart';
 import 'package:flutter/material.dart';
 
 class ManagerFontFamily {
-  static String fontFamily = 'Roboto';
+  static String fontFamily = 'PlusJakartaSans';
   static String arabicFontFamily = 'Tajawal';
   static String englishFamily = 'Poppins';
 }

@@ -13,6 +13,7 @@ Widget mainButton({
   Color? color,
   double? height,
   ShapeBorder? shapeBorder,
+  BorderSide? borderSide,
   double? elevation,
   EdgeInsetsGeometry? padding,
 }) {
@@ -20,14 +21,15 @@ Widget mainButton({
     padding: padding,
     onPressed: onPressed,
     minWidth: minWidth.onNull(),
-    height: height ?? ManagerHeight.h48,
+    height: height ?? ManagerHeight.h60,
     color: color ?? ManagerColors.primaryColor,
     elevation: elevation ?? 2,
     shape: shapeBorder ??
         RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(
-            ManagerRadius.r10,
+            ManagerRadius.r12,
           ),
+          side: borderSide ?? BorderSide.none,
         ),
     child: child ??
         Text(

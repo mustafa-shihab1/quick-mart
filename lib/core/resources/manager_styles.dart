@@ -6,6 +6,7 @@ TextStyle _getTextStyle(
   String fontFamily,
   FontWeight fontWeight,
   Color color,
+  double height,
   TextDecoration decoration,
   dynamic overflow,
 ) {
@@ -16,6 +17,7 @@ TextStyle _getTextStyle(
     color: color,
     decoration: decoration,
     overflow: overflow,
+    height: height,
   );
 }
 
@@ -25,14 +27,17 @@ TextStyle getRegularTextStyle({
   required Color color,
   dynamic overflow = TextOverflow.visible,
   TextDecoration decoration = TextDecoration.none,
+  double height = 1.0,
 }) {
   return _getTextStyle(
     fontSize,
     ManagerFontFamily.fontFamily,
     ManagerFontWeight.regular,
     color,
+    height,
     decoration,
     overflow,
+
   );
 }
 
@@ -42,12 +47,14 @@ TextStyle getMediumTextStyle({
   required Color color,
   TextDecoration decoration = TextDecoration.none,
   dynamic overflow = TextOverflow.visible,
+  double height = 1.0,
 }) {
   return _getTextStyle(
     fontSize,
     ManagerFontFamily.fontFamily,
     ManagerFontWeight.medium,
     color,
+    height,
     decoration,
     overflow,
   );
@@ -59,7 +66,8 @@ TextStyle getBoldTextStyle({
   required Color color,
   TextDecoration decoration = TextDecoration.none,
   dynamic overflow = TextOverflow.visible,
+  double height = 1.0,
 }) {
   return _getTextStyle(fontSize, ManagerFontFamily.fontFamily,
-      ManagerFontWeight.bold, color, decoration, overflow);
+      ManagerFontWeight.bold, color, height,decoration, overflow);
 }
