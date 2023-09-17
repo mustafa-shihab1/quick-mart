@@ -6,10 +6,11 @@ class ManagerAssets {
   static const String logo = '$imagesPath/logo.svg';
   static const String qLogo = '$imagesPath/Q.svg';
   static const String uickMartLogo = '$imagesPath/uickMart.svg';
+  static const String quickMart = '$imagesPath/quickmart.svg';
   static const String documentBlack = '$imagesPath/document_black.svg';
-  static const String outBoardingImage1 = '$imagesPath/illustration1.svg';
-  static const String outBoardingImage2 = '$imagesPath/illustration2.svg';
-  static const String outBoardingImage3 = '$imagesPath/illustration3.svg';
+  static const String outBoardingImage1 = '$imagesPath/out_boarding1.png';
+  static const String outBoardingImage2 = '$imagesPath/out_boarding2.png';
+  static const String outBoardingImage3 = '$imagesPath/out_boarding3.png';
   static const String credit = '$imagesPath/creidet.svg';
   static const String search = '$imagesPath/search.svg';
   static const String phone = '$imagesPath/phone.svg';
