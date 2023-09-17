@@ -16,29 +16,38 @@ class SliderIndicator extends StatelessWidget {
       builder: (controller) {
         return Container(
           decoration: BoxDecoration(
-            color: ManagerColors.greyLight,
             borderRadius: BorderRadius.circular(
-              ManagerRadius.r8,
+              ManagerRadius.r24,
             ),
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              SizedBox(
+                width: ManagerWidth.w4,
+              ),
               ...List.generate(
                 controller.outBoardingItems.length,
-                (index) => AnimatedContainer(
-                  duration: const Duration(
-                    milliseconds: Constants.sliderTimeMillSecond,
-                  ),
-                  width:  ManagerWidth.w68,
-                  height: ManagerHeight.h4,
-                  decoration: BoxDecoration(
-                    color: controller.getCurrentPage() == index ? ManagerColors.primaryColor
-                        : ManagerColors.greyLight,
-                    borderRadius: BorderRadius.circular(
-                      ManagerRadius.r10,
+                (index) => Row(
+                  children: [
+                    AnimatedContainer(
+                      duration: const Duration(
+                        milliseconds: Constants.sliderTimeMillSecond,
+                      ),
+                      width:  ManagerWidth.w6,
+                      height: ManagerHeight.h6,
+                      decoration: BoxDecoration(
+                        color: controller.getCurrentPage() == index ? ManagerColors.secondaryColor_
+                            : ManagerColors.greyLight,
+                        borderRadius: BorderRadius.circular(
+                          ManagerRadius.r24,
+                        ),
+                      ),
                     ),
-                  ),
+                    SizedBox(
+                      width: ManagerWidth.w4,
+                    ),
+                  ],
                 ),
               ),
             ],
