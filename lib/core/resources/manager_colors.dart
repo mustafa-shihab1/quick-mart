@@ -6,12 +6,14 @@ class ManagerColors {
   static const Color lightGreyColor = Color(0xffF4FDFA);
   static const Color secondaryColor_ = Color(0xff21D4B4);
   static const Color shadowCategory = Color(0x29000000);
+  static const Color authTextFieldBorderColor = Color(0xFFF4F5FD);
   static const Color white = Colors.white;
   static const Color black = Colors.black;
   static const Color textColor = Color(0xFF072A33);
   static const Color textColorLight = Color(0xff525167);
   static const Color subTitleColor = Color(0xff6F7384);
   static const Color primaryColor = Color(0xff222223);
+  static const Color requiredStarColor = Color(0xffEE4D4D);
   static const Color borderSide = Color(0xff1A1919);
   static const Color buttonColorLight = Color(0xFFA7E4DC);
   static const Color buttonColorDarK = Color(0xFFA7E4DC);
