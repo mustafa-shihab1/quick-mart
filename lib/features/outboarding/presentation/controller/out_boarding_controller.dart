@@ -68,10 +68,16 @@ class OutBoardingController extends GetxController {
     }
   }
 
-  Future<void> getStart() async {
+  Future<void> getStarted() async {
+    await _appSettingsPrefs.setOutBoardingScreenViewed();
+    Get.offAllNamed(Routes.register);
+  }
+
+  Future<void> getLogin() async {
     await _appSettingsPrefs.setOutBoardingScreenViewed();
     Get.offAllNamed(Routes.login);
   }
+
 
   void previousPage() {
     if (isNotFirstPage()) {
