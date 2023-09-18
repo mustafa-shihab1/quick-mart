@@ -11,6 +11,7 @@ class ManagerAssets {
   static const String outBoardingImage1 = '$imagesPath/out_boarding1.png';
   static const String outBoardingImage2 = '$imagesPath/out_boarding2.png';
   static const String outBoardingImage3 = '$imagesPath/out_boarding3.png';
+  static const String google = '$imagesPath/google.svg';
   static const String credit = '$imagesPath/creidet.svg';
   static const String search = '$imagesPath/search.svg';
   static const String phone = '$imagesPath/phone.svg';
