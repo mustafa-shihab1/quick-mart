@@ -4,16 +4,12 @@ import 'package:flutter_svg/svg.dart';
 import '../../../../config/constants.dart';
 import '../../../../core/resources/manager_assets.dart';
 
-Expanded partTopAuth() {
-  return Expanded(
-    flex: Constants.authFirstPartFlex,
-    child: Center(
+Widget partTopAuth() {
+  return SafeArea(
+    child: Align(
+      alignment: Alignment.centerLeft,
       child: SvgPicture.asset(
-        ManagerAssets.logo,
-        colorFilter: ColorFilter.mode(
-          ManagerColors.background,
-          BlendMode.darken,
-        ),
+        ManagerAssets.quickMart,
       ),
     ),
   );

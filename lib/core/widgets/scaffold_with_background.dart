@@ -12,17 +12,15 @@ Widget scaffoldWithImageBackground({
 }) {
   return willPopScope(
     child: Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: Constants.elevation,
-        leading: isRegisterView ? arrowBackButton() : Container(),
-      ),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.transparent,
+      //   elevation: Constants.elevation,
+      //   leading: isRegisterView ? arrowBackButton() : Container(),
+      // ),
       extendBodyBehindAppBar: true,
-      backgroundColor: ManagerColors.background,
+      backgroundColor: ManagerColors.white,
       body: Container(
-        margin: EdgeInsetsDirectional.only(
-          top: ManagerHeight.h12,
-        ),
+        margin: EdgeInsetsDirectional.only(start: ManagerWidth.w16,end: ManagerWidth.w16,top: ManagerHeight.h20),
         child: child /* add child content here */,
       ),
     ),

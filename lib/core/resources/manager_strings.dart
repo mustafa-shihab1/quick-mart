@@ -67,7 +67,17 @@ class ManagerStrings {
 
   static String get login => tr('Login');
 
-  static String get signUp => tr('signUp');
+  static String get signUp => tr('Signup');
+
+  static String get requiredStar => tr(' *');
+
+  static String get enterYourPassword => tr('Enter Your Password');
+
+  static String get alreadyHaveAccount => tr('Already have an account?');
+
+  static String get createAccount => tr('Create Account');
+
+  static String get signupWithGoogle => tr('Signup with Google');
 
   static String get editNameFailed => tr('editNameFailed');
 
@@ -77,7 +87,7 @@ class ManagerStrings {
 
   static String get userProfileFailed => tr('userProfileFailed');
 
-  static String get email => tr('email');
+  static String get email => tr('Email');
 
   static String get status => tr('status');
 
@@ -107,9 +117,9 @@ class ManagerStrings {
 
   static String get shouldAgreeTerms => tr('shouldAgreeTerms');
 
-  static String get password => tr('password');
+  static String get password => tr('Password');
 
-  static String get fullName => tr('fullName');
+  static String get fullName => tr('Full Name');
 
   static String get userName => tr('userName');
 
