@@ -3,8 +3,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:flutter_triad/core/resources/manager_assets.dart';
 import 'package:flutter_triad/core/resources/manager_icons.dart';
 import 'package:flutter_triad/core/resources/manager_strings.dart';
-import 'package:flutter_triad/core/widgets/main_button.dart';
 import 'package:flutter_triad/features/outboarding/presentation/controller/out_boarding_controller.dart';
+import 'package:flutter_triad/features/outboarding/presentation/view/widget/main_button_visibility.dart';
 import 'package:get/get.dart';
 
 import '../../../../../core/resources/manager_colors.dart';
@@ -90,16 +90,13 @@ class OutBoardingPage extends StatelessWidget {
                           image,
                         ),
                         SizedBox(height: ManagerHeight.h50),
-
                       ],
                     ),
                   ),
                   SizedBox(height: ManagerHeight.h24),
-
                 ],
               ),
             ),
-
             SizedBox(
               height: ManagerHeight.h16,
             ),
@@ -133,73 +130,7 @@ class OutBoardingPage extends StatelessWidget {
             SizedBox(
               height: ManagerHeight.h24,
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Visibility(
-                visible: controller.isNotLastedPage(),
-                replacement: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    mainButton(
-                      elevation: 0,
-                      onPressed: () {
-                        controller.getStart();
-                      },
-                      borderSide: const BorderSide(
-                        width: 1,
-                        color: ManagerColors.lightGreyColor,
-                      ),
-                      child: Text(
-                        ManagerStrings.login,
-                        style: getRegularTextStyle(
-                          fontSize: ManagerFontSize.s14,
-                          color: ManagerColors.primaryColor_,
-                        ),
-                      ),
-                      color: ManagerColors.white,
-                      minWidth: size.width * 0.45,
-                    ),
-                    SizedBox(
-                      width: ManagerWidth.w8,
-                    ),
-                    mainButton(
-                      onPressed: () {
-                        controller.getStart();
-                      },
-                      child: Row(
-                        children: [
-                          Text(
-                            ManagerStrings.getStartButton,
-                            style: getRegularTextStyle(
-                              fontSize: ManagerFontSize.s14,
-                              color: ManagerColors.white,
-                            ),
-                          ),
-                          SizedBox(width: ManagerWidth.w6,),
-                          Icon(ManagerIcons.arrow_forward_android,color: ManagerColors.white,)
-                        ],
-                      ),
-                      color: ManagerColors.primaryColor,
-                      minWidth: size.width * 0.45,
-                    ),
-                  ],
-                ),
-                child: mainButton(
-                  onPressed: () {
-                    controller.nextPage();
-                  },
-                  child: Text(
-                    ManagerStrings.next,
-                    style: getRegularTextStyle(
-                      fontSize: ManagerFontSize.s15,
-                      color: ManagerColors.white,
-                    ),
-                  ),
-                  minWidth: double.infinity,
-                  color: ManagerColors.primaryColor,
-                ),
-              ),
-            ),
+            MainButtonVisibility(size: size),
             SizedBox(
               height: ManagerHeight.h24,
             ),
